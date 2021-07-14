@@ -87,8 +87,9 @@ height: 50px;
     top: 2200px
 }
 .world-cup h2{
-    margin-left: 30%;
+    margin-left: 40%;
     padding-left: 26px;
+    text-align: center;
 }
 
 .years{
@@ -226,7 +227,7 @@ margin-bottom: 20px;
     .footer-section{
         left: 0;
         right: 50px;
-        top: 7500px;
+        top: 7400px;
         text-align: left;
         justify-content: left;
         align-items: flex-start;
@@ -255,9 +256,9 @@ margin-bottom: 20px;
         left: 0px;
         top: 6500px;
        }
-    h2{
-        margin-left: 0;
-        padding-left: 0;
+    .world-cup h2{
+        margin-left: 20px;
+        padding-left: 20px; 
        }
     .header-section img {
         position: static;
