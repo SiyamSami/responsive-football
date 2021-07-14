@@ -39,7 +39,7 @@ header{
 
 }
 .header-div{
-    display: f;
+    display: flex;
 }
 .header-section img{
 position: relative;
