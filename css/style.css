@@ -1,0 +1,262 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;500&display=swap');
+
+/* common-styles */
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+h1{
+    color: #FFFFFF
+}
+
+
+/* button style */
+.button{
+position: relative;
+width: 88px;
+left: 156px;
+top: 464px;
+padding: 8px 24px;
+background-color: #E02C6D;
+font-family: Poppins;
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+text-decoration: none;
+color: white;
+}
+
+/* header-style */
+header{
+    background-color: #2D25A0;
+    height:677px;
+}
+.header-section{
+    display: flex;
+
+}
+.header-div{
+    display: f;
+}
+.header-section img{
+position: relative;
+width: 400px;
+height: 400px;
+left: 700px;
+top: 153px;
+right: 143px;
+bottom: 86px;
+transition: transform 1s ease-in ;
+}
+.header-section img:hover {
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+.header-section h1{
+position: absolute;
+width: 485px;
+height: 230px;
+left: 156px;
+top: 154px;
+right: 799px;
+bottom: 187px;
+font-family: Poppins;
+font-style: normal;
+font-weight: bold;
+font-size: 64px;
+line-height: 80px;
+}
+
+/* main-style */
+
+.container{
+ position: relative;
+background: #FFFFFF;
+height: 50px;
+}
+
+.world-cup{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 483.87px;
+    height: 213px;
+    left: 300px;
+    top: 2200px
+}
+.world-cup h2{
+    margin-left: 30%;
+    padding-left: 26px;
+}
+
+.years{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    grid-gap: 1em;
+    height: 100%;
+}
+.years a{
+    text-decoration: none;
+}
+.year{
+    background-color: lightsteelblue;
+    padding: 10px;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+/* player styles */
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 27px;
+    position: absolute;
+    top: 70px;
+    left: 110px;
+
+}
+
+.player{
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 15px;
+width: 330px;
+height: 474px;
+left: 180px;
+top: 747px;
+border-radius: 10px;
+background: #FFFFFF;
+box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+
+.player .player-img img{
+position: static;
+width: 300px;
+height: 256px;
+left: 0px;
+top: 0px;
+border-radius: 10px;
+}
+
+.player .player-info h2{
+position: static;
+width: 300px;
+left: calc(50% - 300px/2);
+top: 0%;
+bottom: 74.03%;
+font-family: Poppins;
+font-style: normal;
+font-weight: bold;
+font-size: 28px;
+line-height: 40px;
+
+}
+
+.player .player-info p{
+position: static;
+width: 300px;
+left: calc(50% - 300px/2);
+top: 32.47%;
+bottom: 0%;
+font-family: Poppins;
+font-size: 16px;
+line-height: 26px;
+}
+
+/* footer style */
+.footer-section{
+/* display: flex; */
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 0px;
+position: relative;
+width: 483.87px;
+height: 213px;
+left: 475px;
+top: 2500px;
+}
+
+.footer-div1 img{
+position: static;
+width: 483px;
+height: 110px;
+margin-bottom: 20px;
+padding-right: 50px;
+}
+
+.footer-div2 img{
+height: 32px;
+left: 157px;
+border-radius: 0px;
+margin-bottom: 20px;
+}
+.footer-section p{
+    margin-bottom: 63px;
+}
+ 
+/* media query for mobile devices */
+
+@media only screen and (max-width:688px) {
+    .container{
+        width: 50%;
+    }
+    .years{
+        width: auto;
+        height: auto;
+    
+    }
+    .world-cup{
+        margin-left: 0;
+        padding-left: 0;
+        flex-wrap: wrap;
+    
+    }
+}
+
+@media only screen and (max-width:480px){
+    .footer-section{
+        left: 50px;
+        top: 2390px;
+    }
+    .footer-div1 img {
+        width: 300px;
+        height: 85px;
+        margin-bottom: 5px;
+        padding-right: 5px;
+    }
+    .footer-div1 {
+        text-align: center;
+    }
+    .footer-div2 {
+        text-align: center;
+    }
+    .footer-section p {
+        text-align: center;
+    }
+    .world-cup {
+        left: 0px;
+    }
+    .header-section img {
+        position: static;
+        width: 180px;
+        height: 180px;
+        transition: transform 1s ease-in;
+    }
+
+    .header-section h1 {
+        position: absolute;
+        left: 20px;
+        top: 140px;
+        right: 799px;
+        font-size: 47px;
+        line-height: 60px;
+    }
+}
